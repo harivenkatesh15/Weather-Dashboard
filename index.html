@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" id="ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/clouds.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navv">
+        <div class="logo">
+          <h1
+            style="
+              color: white;
+              font-weight: bolder;
+              font-size: 1.9rem;
+              margin-bottom: 20px;
+              margin-left: 10px;
+            "
+          >
+            Weather
+          </h1>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <input
+                type="text"
+                placeholder="Enter a city"
+                style="border-radius: 24px; border: none; padding: 10px"
+                id="city_input"
+              />
+            </li>
+            <li>
+              <button
+                style="border-radius: 24px; border: none; padding: 10px"
+                id="searchbtn"
+              >
+                Search
+              </button>
+            </li>
+            <li>
+              <button
+                id="locbtn"
+                class="btn"
+                style="border-radius: 24px; border: none; padding: 10px"
+              >
+                <i class="fa-solid fa-location-crosshairs"></i> Current Location
+              </button>
+            </li>
+            <li>
+              <button
+                id="changeLayout"
+                style="border-radius: 24px; border: none; padding: 10px"
+              >
+                Change Layout
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="weather-data">
+      <div class="weather-left" style="margin-top: 20px">
+        <div class="card">
+          <div class="current-weather">
+            <div class="details">
+              <p>Now</p>
+              <h2>___&deg;C</h2>
+              <p>_____</p>
+            </div>
+            <div class="weather-icon">
+              <img src="images/clouds.png" alt="" />
+            </div>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <p><i class="fa-regular fa-calendar-days"></i>_____</p>
+            <p><i class="fa-solid fa-location-dot"></i>_____</p>
+          </div>
+        </div>
+        <div class="card">
+          <h2 style="color: white">5 days forecast</h2>
+          <div class="day-forecast">
+            <div class="forecast-item">
+              <div class="icon-wrapper">
+                <img src="images/clouds.png" alt="" />
+                <span>___&deg;C</span>
+              </div>
+              <p>___</p>
+              <p>___</p>
+            </div>
+            <div class="forecast-item">
+              <div class="icon-wrapper">
+                <img src="images/clouds.png" alt="" />
+                <span>___&deg;C</span>
+              </div>
+              <p>___</p>
+              <p>___</p>
+            </div>
+            <div class="forecast-item">
+              <div class="icon-wrapper">
+                <img src="images/clouds.png" alt="" />
+                <span>___&deg;C</span>
+              </div>
+              <p>___</p>
+              <p>___</p>
+            </div>
+            <div class="forecast-item">
+              <div class="icon-wrapper">
+                <img src="images/clouds.png" alt="" />
+                <span>___&deg;C</span>
+              </div>
+              <p>___</p>
+              <p>___</p>
+            </div>
+            <div class="forecast-item">
+              <div class="icon-wrapper">
+                <img src="images/clouds.png" alt="" />
+                <span>___&deg;C</span>
+              </div>
+              <p>___</p>
+              <p>___</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-right">
+        <h2 style="color: white">Today's Highlights</h2>
+        <div class="highlights">
+          <div class="card">
+            <div class="card-head">
+              <p>Air Quality Index</p>
+              <p class="air aq-1">Good</p>
+            </div>
+            <div class="air-indices">
+              <i class="fa-solid fa-wind fa-2x"></i>
+              <div class="item">
+                <p>PM2.5</p>
+                <h2>___</h2>
+              </div>
+              <div class="item">
+                <p>PM10</p>
+                <h2>___</h2>
+              </div>
+              <div class="item">
+                <p>SO2</p>
+                <h2>___</h2>
+              </div>
+              <div class="item">
+                <p>CO</p>
+                <h2>___</h2>
+              </div>
+              <div class="item">
+                <p>NO</p>
+                <h2>___</h2>
+              </div>
+              <div class="item">
+                <p>NO2</p>
+                <h2>___</h2>
+              </div>
+              <div class="item">
+                <p>NH3</p>
+                <h2>___</h2>
+              </div>
+              <div class="item">
+                <p>O3</p>
+                <h2>___</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-head"
+              style="display: flex; justify-content: center"
+            >
+              <h3 style="color: white">Sunrise & Sunset</h3>
+            </div>
+            <div
+              class="sunrise-sunset"
+              style="
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+              "
+            >
+              <div class="item">
+                <div class="icon">
+                  <img src="images/clear.png" alt="" />
+                </div>
+                <div>
+                  <p>Sunrise</p>
+                  <h2>___</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <img src="images/clear.png" alt="" />
+                </div>
+                <div>
+                  <p>Sunset</p>
+                  <h2>___</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <p>Humidity</p>
+            </div>
+            <div class="card-item">
+              <i class="fa-solid fa-droplet fa-2x"></i>
+              <h2 id="humidityVal">___%</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <p>Pressure</p>
+            </div>
+            <div class="card-item">
+              <i class="fa-solid fa-compass fa-2x"></i>
+              <h2 id="pressureVal">___%</h2>
+            </div>
+          </div>
+          <!-- <div class="card">
+            <div class="card-head">
+                <p>Visibility</p>
+            </div>
+            <div class="card-item">
+                <i class="fa-solid fa-eye fa-2x"></i>
+                <h2 id="visibilityVal">___km</h2>
+            </div>
+          </div> -->
+          <div class="card">
+            <div class="card-head">
+              <p>Wind Speed</p>
+            </div>
+            <div class="card-item">
+              <i class="fa-solid fa-location-arrow fa-2x"></i>
+              <h2 id="windspeedVal">___m/s</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <p>Feels Like</p>
+            </div>
+            <div class="card-item">
+              <i class="fa-solid fa-temperature-list fa-2x"></i>
+              <h2 id="feelsVal">___&deg;C</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f70cd02bd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
+  </body>
+</html>
